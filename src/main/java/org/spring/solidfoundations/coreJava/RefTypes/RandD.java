@@ -1,4 +1,4 @@
-package org.spring.solidfoundations.coreJava;
+package org.spring.solidfoundations.coreJava.RefTypes;
 
 public class RandD {
 
