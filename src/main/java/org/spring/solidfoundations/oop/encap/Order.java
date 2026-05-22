@@ -1,4 +1,4 @@
-package org.spring.solidfoundations.oop;
+package org.spring.solidfoundations.oop.encap;
 
 import java.util.ArrayList;
 import java.util.List;

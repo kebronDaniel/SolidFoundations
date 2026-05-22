@@ -1,4 +1,4 @@
-package org.spring.solidfoundations.oop;
+package org.spring.solidfoundations.oop.encap;
 
 public class OrderItem {
     private String item;
