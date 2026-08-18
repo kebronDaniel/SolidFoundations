@@ -1,12 +1,9 @@
 package org.spring.solidfoundations;
 
-import org.spring.solidfoundations.coreJava.RefTypes.Person;
-import org.spring.solidfoundations.coreJava.RefTypes.RandD;
-import org.spring.solidfoundations.coreJava.oop.PaymentProcessorImpl;
+import org.spring.solidfoundations.coreJava.oop.modernInterfaces.PaymentProcessorImpl;
+import org.spring.solidfoundations.coreJava.oop.staticCounter.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.HashMap;
 
 @SpringBootApplication
 public class SolidFoundationsApplication {
@@ -14,8 +11,14 @@ public class SolidFoundationsApplication {
     public static void main(String[] args) {
         SpringApplication.run(SolidFoundationsApplication.class, args);
 
-        PaymentProcessorImpl paymentProcessor = new PaymentProcessorImpl();
-        paymentProcessor.processPayment(1000.10, "USD");
+        User user1 = new User();
+        User user2 = new User();
+
+        System.out.println(user1.getId());
+        System.out.println(User.getCounter());
+        System.out.println(user2.getId());
+        System.out.println(User.getCounter());
+
 
     }
 

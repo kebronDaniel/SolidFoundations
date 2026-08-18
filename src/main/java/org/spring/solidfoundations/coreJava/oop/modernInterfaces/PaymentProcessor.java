@@ -1,4 +1,4 @@
-package org.spring.solidfoundations.coreJava.oop;
+package org.spring.solidfoundations.coreJava.oop.modernInterfaces;
 
 public interface PaymentProcessor {
 
