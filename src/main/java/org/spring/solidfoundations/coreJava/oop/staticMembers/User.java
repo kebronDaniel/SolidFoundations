@@ -1,4 +1,4 @@
-package org.spring.solidfoundations.coreJava.oop.staticCounter;
+package org.spring.solidfoundations.coreJava.oop.staticMembers;
 
 public class User {
     // this can be used as how many instances are created in total.

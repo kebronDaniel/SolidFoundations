@@ -1,7 +1,8 @@
 package org.spring.solidfoundations;
 
-import org.spring.solidfoundations.coreJava.oop.modernInterfaces.PaymentProcessorImpl;
-import org.spring.solidfoundations.coreJava.oop.staticCounter.User;
+import org.spring.solidfoundations.coreJava.oop.staticMembers.ChildEmployee;
+import org.spring.solidfoundations.coreJava.oop.staticMembers.Employee;
+import org.spring.solidfoundations.coreJava.oop.staticMembers.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,14 +12,15 @@ public class SolidFoundationsApplication {
     public static void main(String[] args) {
         SpringApplication.run(SolidFoundationsApplication.class, args);
 
-        User user1 = new User();
-        User user2 = new User();
+        Employee employee = new Employee("first employee");
 
-        System.out.println(user1.getId());
-        System.out.println(User.getCounter());
-        System.out.println(user2.getId());
-        System.out.println(User.getCounter());
+        // here the parents static method overrides the child's(one static member per class)
+        // because its the declared type that is taken.
+        // its called method hiding.
+        Employee employee2 = new ChildEmployee("second employee");
 
+        Employee.show(employee);
+        ChildEmployee.show(employee2);
 
     }
 
