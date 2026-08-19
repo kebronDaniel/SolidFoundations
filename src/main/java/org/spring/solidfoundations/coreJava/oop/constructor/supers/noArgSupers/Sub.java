@@ -1,6 +1,9 @@
 package org.spring.solidfoundations.coreJava.oop.constructor.supers.noArgSupers;
 
 public class Sub extends Master{
+
+    int s = initializeSub();
+
     public Sub() {
         // here there is an implicit super()
         // this is because master has no args cons.
@@ -14,6 +17,12 @@ public class Sub extends Master{
     public void print() {
         super.print();
         System.out.println("Child prints");
+    }
+
+    public int initializeSub(){
+        System.out.println("initializing sub's field");
+        this.s = 8;
+        return this.s;
     }
 
     // 1, master cons is called
