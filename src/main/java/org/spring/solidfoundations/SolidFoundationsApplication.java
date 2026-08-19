@@ -1,8 +1,6 @@
 package org.spring.solidfoundations;
 
-import org.spring.solidfoundations.coreJava.oop.staticMembers.ChildEmployee;
-import org.spring.solidfoundations.coreJava.oop.staticMembers.Employee;
-import org.spring.solidfoundations.coreJava.oop.staticMembers.User;
+import org.spring.solidfoundations.coreJava.oop.constructor.Product;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,7 +10,8 @@ public class SolidFoundationsApplication {
     public static void main(String[] args) {
         SpringApplication.run(SolidFoundationsApplication.class, args);
 
-
+        Product product = new Product("new prod");
+        System.out.println(product.getType());
     }
 
 }
